@@ -1,0 +1,37 @@
+{
+  "name": "shizuchat",
+  "description": "A telegram bot",
+  "logo": "https://envs.sh/nWi.jpg",
+  "keywords": [
+    "Chatbot",
+    "mongodb",
+    "python",
+    "pyrogram"
+  ],
+    "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "repository": "https://github.com/newiseland/chatgpt_telegram_bot",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "A Bot token from @BotFather",
+      "required": true,
+      "value": "7730326936:AAE9bGRJpKola2F_WDdZiFYlodH8raCfkJY"
+    },
+    "OWNER_ID": {
+      "description": "Fill Here Your Owner User Id",
+      "required": true,
+      "value": "8170572505"
+    },
+     "STRING_SESSION": {
+      "description": "Fill Here A Pyrogram String Session For Id-Chatbot, Get it from: https://telegram.tools/session-string-generator#pyrogram,user (This is Optional, If you dont want id-chatbot you can skip this variable)",
+      "required": false,
+      "value": ""
+    },
+    "MONGO_URL": {
+      "description": "Get a mongodb url from https://cloud.mongodb.com.",
+      "required": true,
+      "value": "mongodb+srv://harryashutosh729:harryashutosh729@harry2.xykka.mongodb.net/?retryWrites=true&w=majority&appName=harry2"
+    }
+  }
+}
